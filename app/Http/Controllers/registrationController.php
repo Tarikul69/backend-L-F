@@ -16,8 +16,15 @@ class registrationController extends Controller
     public function registration()
     {
         $data = DB::table('users')->get();
-        $success =DB::table('users')->pluck('email');
-        return response()->json(["Success" =>$success, 'data'=>$data], 200);
+       // $success =DB::table('users')->pluck('email');
+        return response()->json([/* "success" =>$success, */ 'data'=>$data,], 200);
     }
      
+
+    public function test(Request $req)
+    {
+        $req->validate();
+    }
+
+ 
 }
