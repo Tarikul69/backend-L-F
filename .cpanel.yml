@@ -1,5 +1,5 @@
 ---
 deployment:
   tasks:
-      - export  DEPLOYMENTH=/home/Marshia/public_html/
+      - export  DEPLOYMENTH=/home/meditech/public_html/
       - /bin/cp * $DEPLOYPATH 
