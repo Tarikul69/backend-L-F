@@ -37,9 +37,12 @@ class backendLogicController extends Controller
         ]);
     }
 
+
     //Support
     public function support()
     {
-        # code...
+        
+    
     }
+
 }
