@@ -22,28 +22,28 @@
 </head>
 
 <body>
-   <!--  <header class="header bg">
+    <header class="header bg">
         <div class="container text-white">
             <div class="row">
-                <div class="col-sm-4 align-self-center text-left">
-                    <h6>Estd 1905</h6>
-                </div>
                 <div class="col-sm-4 col-12 align-self-center box-1 text-center">
-                    <a class="navbar-brand" href="index"><img src="assets/images/header-logo.png" alt="logo"></a>
-                </div>
-                <div class="col-sm-4 align-self-center text-right">
-                    <div class="social-icons">
-                        <a href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
-                        <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                        <a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a>
-                        <a href="#"><i class="fa fa-youtube" aria-hidden="true"></i></a>
+                        <a class="navbar-brand" href="index"><img src="assets/images/header-logo.png" alt="logo"></a>
+                    </div>
+                    <div class="col-sm-4 align-self-center text-left">
+                        <h6>Estd 1905</h6>
+                    </div>
+                    <div class="col-sm-4 align-self-center text-right">
+                        <div class="social-icons">
+                            <a href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+                            <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                            <a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a>
+                            <a href="#"><i class="fa fa-youtube" aria-hidden="true"></i></a>
+                        </div>
                     </div>
                 </div>
-            </div>
             <!--/row-->
         </div>
         <!--container-->
-    </header> -->
+    </header>
     <span class="position-absolute trigger"><!-- hidden trigger to apply 'stuck' styles --></span>
     <nav class="navbar navbar-expand-sm sticky-top navbar-dark">
         <div class="container">
@@ -101,68 +101,6 @@
         </div>
         <hr>
         <div class="container-fluid">
-            <div class="row" data-aos="fade-up" data-aos-delay="300">
-                <a href="assets/images/portfolio-2.jpg" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-3 box">
-                  <img src="assets/images/portfolio-2.jpg" class="img-fluid">
-                  <div class="overlay">
-                  <img src="assets/images/plus-img.png" alt="plus-icon">
-                  <div class="inner-text"><h4>beautiful beach <span>top view</span></h4></div>
-                  </div>
-                </a>
-                <a href="assets/images/portfolio-3.jpg" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-3 box">
-                  <img src="assets/images/portfolio-3.jpg" class="img-fluid">
-                  <div class="overlay">
-                  <img src="assets/images/plus-img.png" alt="plus-icon">
-                  <div class="inner-text"><h4>beautiful beach <span>top view</span></h4></div>
-                  </div>
-                </a>
-                <a href="assets/images/portfolio-4.jpg" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-3 box">
-                  <img src="assets/images/portfolio-4.jpg" class="img-fluid">
-                  <div class="overlay">
-                  <img src="assets/images/plus-img.png" alt="plus-icon">
-                  <div class="inner-text"><h4>beautiful beach <span>top view</span></h4></div>
-                  </div>
-                </a>
-                <a href="assets/images/portfolio-5.jpg" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-3 box">
-                  <img src="assets/images/portfolio-5.jpg" class="img-fluid">
-                  <div class="overlay">
-                  <img src="assets/images/plus-img.png" alt="plus-icon">
-                  <div class="inner-text"><h4>beautiful beach <span>top view</span></h4></div>
-                  </div>
-                </a>
-            </div>
-            <!--/row-->
-            <div class="row" data-aos="fade-up" data-aos-delay="300">
-                <a href="assets/images/portfolio-2.jpg" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-3 box">
-                  <img src="assets/images/portfolio-2.jpg" class="img-fluid">
-                  <div class="overlay">
-                  <img src="assets/images/plus-img.png" alt="plus-icon">
-                  <div class="inner-text"><h4>beautiful beach <span>top view</span></h4></div>
-                  </div>
-                </a>
-                <a href="assets/images/portfolio-3.jpg" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-3 box">
-                  <img src="assets/images/portfolio-3.jpg" class="img-fluid">
-                  <div class="overlay">
-                  <img src="assets/images/plus-img.png" alt="plus-icon">
-                  <div class="inner-text"><h4>beautiful beach <span>top view</span></h4></div>
-                  </div>
-                </a>
-                <a href="assets/images/portfolio-4.jpg" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-3 box">
-                  <img src="assets/images/portfolio-4.jpg" class="img-fluid">
-                  <div class="overlay">
-                  <img src="assets/images/plus-img.png" alt="plus-icon">
-                  <div class="inner-text"><h4>beautiful beach <span>top view</span></h4></div>
-                  </div>
-                </a>
-                <a href="assets/images/portfolio-5.jpg" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-3 box">
-                  <img src="assets/images/portfolio-5.jpg" class="img-fluid">
-                  <div class="overlay">
-                  <img src="assets/images/plus-img.png" alt="plus-icon">
-                  <div class="inner-text"><h4>beautiful beach <span>top view</span></h4></div>
-                  </div>
-                </a>
-            </div>
-            <!--/row-->
             <div class="row" data-aos="fade-up" data-aos-delay="300">
                 <a href="assets/images/portfolio-2.jpg" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-3 box">
                   <img src="assets/images/portfolio-2.jpg" class="img-fluid">

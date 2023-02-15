@@ -18,28 +18,28 @@
 </head>
 
 <body>
-   <!--  <header class="header bg">
+    <header class="header bg">
         <div class="container text-white">
             <div class="row">
-                <div class="col-sm-4 align-self-center text-left">
+                <!-- <div class="col-sm-4 align-self-center text-left">
                     <h6>Estd 1905</h6>
-                </div>
+                </div> -->
                 <div class="col-sm-4 col-12 align-self-center box-1 text-center">
                     <a class="navbar-brand" href="index"><img src="assets/images/header-logo.png" alt="logo"></a>
                 </div>
                 <div class="col-sm-4 align-self-center text-right">
-                    <div class="social-icons">
+                    <!-- <div class="social-icons">
                         <a href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
                         <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
                         <a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a>
                         <a href="#"><i class="fa fa-youtube" aria-hidden="true"></i></a>
-                    </div>
+                    </div> -->
                 </div>
             </div>
             <!--/row-->
         </div>
         <!--container-->
-    </header> -->
+    </header> 
     <span class="position-absolute trigger"><!-- hidden trigger to apply 'stuck' styles --></span>
     <nav class="navbar navbar-expand-sm sticky-top navbar-dark">
         <div class="container">
@@ -80,9 +80,8 @@
             <div class="gradient"></div>
             <div class="container-fluid content">
                 <h1 data-aos="fade-up" data-aos-delay="100">WELCOME TO Meditech Corporation </h1>
-                <h2 data-aos="fade-up" data-aos-delay="300">An engineering company that specializes in selling machinery from manufacturers throughout the world
-to Bangladeshi pharmaceutical firms </h2>
-                <h4 data-aos="fade-up" data-aos-delay="500">###################</h4>
+                <h2 data-aos="fade-up" data-aos-delay="300">An engineering company that specializes in selling machinery from manufacturers throughout the world to Bangladeshi pharmaceutical firms </h2>
+                <!-- <h4 data-aos="fade-up" data-aos-delay="500">###################</h4> -->
                 <p data-aos="fade-up" data-aos-delay="700"><a href="about" class="btn btn-success">Get Started</a></p>
             </div>
             <!--container-fluid end-->
