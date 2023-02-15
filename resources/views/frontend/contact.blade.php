@@ -21,28 +21,28 @@
 </head>
 
 <body>
-    <!-- <header class="header bg">
+     <header class="header bg">
         <div class="container text-white">
             <div class="row">
-                <div class="col-sm-4 align-self-center text-left">
+             <!--    <div class="col-sm-4 align-self-center text-left">
                     <h6>Estd 1905</h6>
-                </div>
+                </div> -->
                 <div class="col-sm-4 col-12 align-self-center box-1 text-center">
                     <a class="navbar-brand" href="index.html"><img src="assets/images/header-logo.png" alt="logo"></a>
                 </div>
                 <div class="col-sm-4 align-self-center text-right">
-                    <div class="social-icons">
+                   <!--  <div class="social-icons">
                         <a href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
                         <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
                         <a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a>
                         <a href="#"><i class="fa fa-youtube" aria-hidden="true"></i></a>
-                    </div>
+                    </div> -->
                 </div>
             </div>
             <!--/row-->
         </div>
         <!--container-->
-    </header> -->
+    </header> 
     <span class="position-absolute trigger"><!-- hidden trigger to apply 'stuck' styles --></span>
     <nav class="navbar navbar-expand-sm sticky-top navbar-dark">
         <div class="container">
@@ -102,24 +102,26 @@
      <div class="container py-5">
       <div class="row" data-aos="fade-up" data-aos-delay="300">
           <div class="col-md-12">
-              <form>
+              <form method="POST" action="/contact1">
+                @csrf
+                @method('post')
                   <div class="form-group row">
                       <div class="col-sm-6">
-                          <input type="text" class="form-control" placeholder="Your Name" required>
+                          <input type="text" class="form-control" name="name" placeholder="Your Name" required>
                       </div>
                           <div class="col-sm-6">
-                          <input type="text" class="form-control" placeholder="Your Email" required>
+                          <input type="text" class="form-control" name="email" placeholder="Your Email" required>
                       </div>
                       <div class="col-sm-12">
-                          <input type="number" class="form-control" placeholder="Your Phont Number" required>
+                          <input type="number" class="form-control" name="phone" placeholder="Your Phont Number" required>
                       </div>
                   </div>
                   <div class="form-group row">
                       <div class="col-xs-12 col-md-12">
-                          <textarea type="text" class="form-control" placeholder="Your Message" rows="6" required></textarea>
+                          <textarea type="text" class="form-control" name="message" placeholder="Your Message" rows="6" required></textarea>
                       </div>
                   </div>
-                  <button type="submit" class="btn btn-primary">Alright Submit it</button>
+                  <button type="submit" class="btn btn-primary">Submit</button>
               </form>
           </div>
       </div>

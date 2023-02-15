@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\backendController;
+use App\Http\Controllers\backendLogicController;
 use App\Http\Controllers\frontendController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\registrationController;
@@ -39,3 +40,6 @@ Route::get('profile', [backendController::class, 'profile']);
 Route::get('forms', [backendController::class, 'forms']);
 Route::get('services1', [backendController::class, 'services']);
 Route::get('login', [backendController::class, 'login']);
+
+//CRUD
+Route::post('contact1', [backendLogicController::class, 'contact']);
