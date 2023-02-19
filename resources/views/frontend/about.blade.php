@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="assets/css/animate.css">
     <link rel="stylesheet" href="assets/css/main.css">
 
-    <title>Medi Tech</title>
+    <title>Medi Tech Corporation</title>
     <style>
     .jumbotron {width: 100%;height: 250px;}
         .jumbotron h2 {padding-bottom: 0;}

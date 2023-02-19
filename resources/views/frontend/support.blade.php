@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="assets/css/animate.css">
     <link rel="stylesheet" href="assets/css/main.css">
 
-    <title>Medi Tech</title>
+    <title>Medi Tech Corporation</title>
     <style>
     .jumbotron {width: 100%;height: 250px;}
         .jumbotron h2 {padding-bottom: 0;}
@@ -69,9 +69,9 @@
                     <li class="nav-item active">
                         <a class="nav-link" href="support">Support</a>
                     </li>
-                    <li class="nav-item">
+                   <!--  <li class="nav-item">
                         <a class="nav-link" href="blog">blog</a>
-                    </li>
+                    </li> -->
                 </ul>
             </div>
         </div>
@@ -102,24 +102,26 @@
      <div class="container py-5">
       <div class="row" data-aos="fade-up" data-aos-delay="300">
           <div class="col-md-12">
-              <form>
+              <form method="POST" action="/support1">
+                    @csrf
+                    @method('post')
                   <div class="form-group row">
                       <div class="col-sm-6">
-                          <input type="text" class="form-control" placeholder="Your Name" required>
+                          <input type="text" class="form-control" name="name" placeholder="Your Name" required>
                       </div>
                           <div class="col-sm-6">
-                          <input type="text" class="form-control" placeholder="Your Email" required>
+                          <input type="text" class="form-control" name="email" placeholder="Your Email" required>
                       </div>
                       <div class="col-sm-12">
-                          <input type="number" class="form-control" placeholder="Your Phont Number" required>
+                          <input type="number" class="form-control" name="phone" placeholder="Your Phont Number" required>
                       </div>
                   </div>
                   <div class="form-group row">
                       <div class="col-xs-12 col-md-12">
-                          <textarea type="text" class="form-control" placeholder="Your Message" rows="6" required></textarea>
+                          <textarea type="text" class="form-control" name="message" placeholder="Your Message" rows="6" required></textarea>
                       </div>
                   </div>
-                  <button type="submit" class="btn btn-primary">Alright Submit it</button>
+                  <button type="submit" class="btn btn-primary">Submit</button>
               </form>
           </div>
       </div>
@@ -134,114 +136,7 @@
 
             <!-- Footer Links -->
             <div class="container text-center text-md-left">
-
-                <!-- Grid row -->
-                <div class="row">
-
-                    <!-- Grid column -->
-                    <div class="col-lg-5 col-sm-12 mx-auto box-1">
-
-                        <!-- Content -->
-                        <a href="index.html"><img src="assets/images/footer-logo.png" alt="footer-logo"></a>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five</p>
-
-                    </div>
-                    <!-- Grid column -->
-
-                    <hr class="clearfix w-100 d-md-none">
-
-                    <!-- Grid column -->
-                    <div class="col-lg-2 col-sm-4 box-2 mx-auto">
-
-                        <!-- Links -->
-                        <h5>Site Navigation</h5>
-
-                        <ul class="list-unstyled">
-                            <li>
-                                <a href="index.html">go to home</a>
-                            </li>
-                            <li>
-                                <a href="services.html">services</a>
-                            </li>
-                            <li>
-                                <a href="portfolio.html">portfolio</a>
-                            </li>
-                            <li>
-                                <a href="blog.html">read blog</a>
-                            </li>
-                            <li>
-                                <a href="contact.html">contact us</a>
-                            </li>
-                            <li>
-                                <a href="contact.html">product support</a>
-                            </li>
-                        </ul>
-
-                    </div>
-                    <!-- Grid column -->
-
-                    <hr class="clearfix w-100 d-md-none">
-
-                    <!-- Grid column -->
-                    <div class="col-lg-2 col-sm-4 box-3 mx-auto">
-
-                        <!-- Links -->
-                        <h5>information</h5>
-
-                        <ul class="list-unstyled">
-                            <li>
-                                <a href="#!">user login</a>
-                            </li>
-                            <li>
-                                <a href="#!">creat new account</a>
-                            </li>
-                            <li>
-                                <a href="#!">checkout</a>
-                            </li>
-                            <li>
-                                <a href="#!">my cart</a>
-                            </li>
-                            <li>
-                                <a href="#!">other information</a>
-                            </li>
-                        </ul>
-
-                    </div>
-                    <!-- Grid column -->
-
-                    <hr class="clearfix w-100 d-md-none">
-
-                    <!-- Grid column -->
-                    <div class="col-lg-2 col-sm-4 box-4 mx-auto">
-
-                        <!-- Links -->
-                        <h5>policies & Info</h5>
-
-                        <ul class="list-unstyled">
-                            <li>
-                                <a href="#!">Terms Conditions </a>
-                            </li>
-                            <li>
-                                <a href="#!">website polocy</a>
-                            </li>
-                            <li>
-                                <a href="#!">Policy for Sellers </a>
-                            </li>
-                            <li>
-                                <a href="#!">Policy for Buyers</a>
-                            </li>
-                            <li>
-                                <a href="#!">Shipping & Refund </a>
-                            </li>
-                            <li>
-                                <a href="#!">Wholesale Policy</a>
-                            </li>
-                        </ul>
-
-                    </div>
-                    <!-- Grid column -->
-
-                </div>
+ 
                 <!-- Grid row -->
 
             </div>
@@ -250,7 +145,7 @@
             <!-- Copyright -->
             <div class="footer-copyright text-center">
                 <div class="gradient"></div>
-                <p>© 2017, All Rights reserved. more theme, designed by<a href="https://www.template.net/editable/websites/html5"> tEMPLATE.net</a></p>
+                <p>© <?php echo date("Y")?>, All Rights reserved by Medi Tech Corporation<a href="https://www.meditech-corporation.com"></a></p>
             </div>
             <!-- Copyright -->
 

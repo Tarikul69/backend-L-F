@@ -67,7 +67,7 @@
                         <a class="nav-link" href="contact">Contact</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="contact">Support</a>
+                        <a class="nav-link" href="support">Support</a>
                     </li>
                     <!-- <li class="nav-item">
                         <a class="nav-link" href="blog">blog</a>

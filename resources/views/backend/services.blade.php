@@ -11,11 +11,7 @@
 
   <!-- Tailwind is included -->
   <link rel="stylesheet" href="backend/css/main.css?v=1628755089081">
-
-  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png"/>
-  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png"/>
-  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png"/>
-  <link rel="mask-icon" href="safari-pinned-tab.svg" color="#00b4b6"/>
+ 
 
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -77,7 +73,7 @@
             </a>
       </li>
       <li class="--set-active-forms-html">
-        <a href="services">
+        <a href="services1">
           <span class="icon"><i class="mdi mdi-square-edit-outline"></i></span>
           <span class="menu-item-label">Services</span>
         </a>
@@ -103,73 +99,44 @@
        
   </div>
 </aside>
-
-<section class="is-title-bar">
-  <div class="flex flex-col md:flex-row items-center justify-between space-y-6 md:space-y-0">
-    <ul>
-      <li>Admin</li>
-      <li>Profile</li>
-    </ul>
-    <a href="https://justboil.me/" onclick="alert('Coming soon'); return false" target="_blank" class="button blue">
-      <span class="icon"><i class="mdi mdi-credit-card-outline"></i></span>
-      <span>Premium Demo</span>
-    </a>
-  </div>
-</section>
-
 <section class="is-hero-bar">
   <div class="flex flex-col md:flex-row items-center justify-between space-y-6 md:space-y-0">
     <h1 class="title">
-      Profile
+      Service
     </h1>
-    <button class="button light">Button</button>
+    
   </div>
 </section>
-
   <section class="section main-section">
-    <div class="grid grid-cols-1 gap-6 lg:grid-cols-2 mb-6">
+    <div class="grid grid-cols-1 gap-6 lg:grid-cols-2 mb-12">
       <div class="card">
         <header class="card-header">
           <p class="card-header-title">
             <span class="icon"><i class="mdi mdi-account-circle"></i></span>
-            Edit Profile
+            Add New Service
           </p>
         </header>
         <div class="card-content">
-          <form>
+          <form method="post" action="/service1">
+             @csrf
+             @method('POST')
             <div class="field">
-              <label class="label">Avatar</label>
-              <div class="field-body">
-                <div class="field file">
-                  <label class="upload control">
-                    <a class="button blue">
-                      Upload
-                    </a>
-                    <input type="file">
-                  </label>
-                </div>
-              </div>
-            </div>
-            <hr>
-            <div class="field">
-              <label class="label">Name</label>
+              <label class="label">Service</label>
               <div class="field-body">
                 <div class="field">
                   <div class="control">
-                    <input type="text" autocomplete="on" name="name" value="John Doe" class="input" required>
+                    <input type="text" autocomplete="on" name="name"  class="input" required>
                   </div>
-                  <p class="help">Required. Your name</p>
-                </div>
+                 </div>
               </div>
             </div>
             <div class="field">
-              <label class="label">E-mail</label>
+              <label class="label">Service Detailse:</label>
               <div class="field-body">
                 <div class="field">
                   <div class="control">
-                    <input type="email" autocomplete="on" name="email" value="user@example.com" class="input" required>
+                    <input type="textarea" autocomplete="on" name="details" class="input" required>
                   </div>
-                  <p class="help">Required. Your e-mail</p>
                 </div>
               </div>
             </div>

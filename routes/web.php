@@ -41,5 +41,10 @@ Route::get('forms', [backendController::class, 'forms']);
 Route::get('services1', [backendController::class, 'services']);
 Route::get('login', [backendController::class, 'login']);
 
+
+
 //CRUD
 Route::post('contact1', [backendLogicController::class, 'contact']);
+Route::post('support1', [backendLogicController::class, 'support1']);
+Route::post('service1', [backendLogicController::class, 'service1']);
+Route::post('login1', [backendLogicController::class, 'login1']);

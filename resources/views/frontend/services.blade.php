@@ -67,7 +67,7 @@
                         <a class="nav-link" href="contact">Contact</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="contact">Support</a>
+                        <a class="nav-link" href="support">Support</a>
                     </li>
                    <!--  <li class="nav-item">
                         <a class="nav-link" href="blog">blog</a>
@@ -99,14 +99,16 @@
                         <div class="col-sm-1 col-12">
                             <i class="fa fa-desktop" aria-hidden="true"></i>
                         </div>
+                        @foreach($data as $ab)
                         <div class="col-sm-11 col-12">
-                            <h3><a href="services">design.</a></h3>
+                            <h3><a href="services">{{$ab->name}}</a></h3>
                             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five</p>
                             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five</p>
                         </div>
+                        @endforeach
                     </div>
                 </div>
-                <div class="col-sm-12 col-12 box-2"  data-aos="fade-up" data-aos-delay="300">
+                <!-- <div class="col-sm-12 col-12 box-2"  data-aos="fade-up" data-aos-delay="300">
                     <div class="row box">
                         <div class="col-sm-1 col-12">
                             <i class="fa fa-code" aria-hidden="true"></i>
@@ -141,7 +143,7 @@
                             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five</p>
                         </div>
                     </div>
-                </div>
+                </div> -->
             </div>
         </div>
     </section>

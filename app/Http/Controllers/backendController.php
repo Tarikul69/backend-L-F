@@ -1,6 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
+use Illuminate\Support\Facades\DB;
 
 use Illuminate\Http\Request;
 
@@ -15,7 +16,8 @@ class backendController extends Controller
     //dashboard
     public function services()
     {
-        return view('backend.services');
+        $data['ab'] = DB::table('services')->get();
+        return view('backend.services')->with('data');
     }
 
     //profile

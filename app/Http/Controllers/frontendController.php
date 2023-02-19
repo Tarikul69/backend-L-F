@@ -1,6 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
+use Illuminate\Support\Facades\DB;
 
 use Illuminate\Http\Request;
 
@@ -41,7 +42,8 @@ class frontendController extends Controller
     //service
     public function services()
     {
-        return view('frontend.services');
+        $data = DB::table('services')->get();
+        return view('frontend.services', compact('data'));
     }
 
     //support

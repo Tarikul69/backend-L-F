@@ -37,36 +37,30 @@
         </p>
       </header>
       <div class="card-content">
-        <form method="get">
-
+        <form method="post" action="/login1">
+          @csrf
+          @method('post')
           <div class="field spaced">
-            <label class="label">Login</label>
+            <label class="label">Email</label>
             <div class="control icons-left">
-              <input class="input" type="text" name="login" placeholder="user@example.com" autocomplete="username">
+              <input class="input" type="text" name="email" placeholder="user@example.com" autocomplete="username">
               <span class="icon is-small left"><i class="mdi mdi-account"></i></span>
             </div>
-            <p class="help">
-              Please enter your login
-            </p>
+             
           </div>
 
           <div class="field spaced">
             <label class="label">Password</label>
             <p class="control icons-left">
-              <input class="input" type="password" name="password" placeholder="Password" autocomplete="current-password">
+              <input class="input" type="password" name="pass" placeholder="Password" autocomplete="current-password">
               <span class="icon is-small left"><i class="mdi mdi-asterisk"></i></span>
             </p>
-            <p class="help">
-              Please enter your password
-            </p>
+            
           </div>
 
           <div class="field spaced">
             <div class="control">
-              <label class="checkbox"><input type="checkbox" name="remember" value="1" checked>
-                <span class="check"></span>
-                <span class="control-label">Remember</span>
-              </label>
+               
             </div>
           </div>
 
