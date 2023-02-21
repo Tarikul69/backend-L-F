@@ -8,7 +8,7 @@
 
   <!-- Tailwind is included -->
   <link rel="stylesheet" href="backend/css/main.css?v=1628755089081">
-
+  
   <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png"/>
   <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png"/>
   <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png"/>
@@ -82,13 +82,13 @@
       <li class="--set-active-forms-html">
         <a href="forms">
           <span class="icon"><i class="mdi mdi-square-edit-outline"></i></span>
-          <span class="menu-item-label">Forms</span>
+          <span class="menu-item-label">Support</span>
         </a>
       </li>
       <li class="active">
         <a href="profile">
           <span class="icon"><i class="mdi mdi-account-circle"></i></span>
-          <span class="menu-item-label">Profile</span>
+          <span class="menu-item-label">Contact</span>
         </a>
       </li>
       <li>
@@ -105,154 +105,41 @@
   <div class="flex flex-col md:flex-row items-center justify-between space-y-6 md:space-y-0">
     <ul>
       <li>Admin</li>
-      <li>Profile</li>
+      <li>Contact</li>
     </ul>
     <a href="https://justboil.me/" onclick="alert('Coming soon'); return false" target="_blank" class="button blue">
       <span class="icon"><i class="mdi mdi-credit-card-outline"></i></span>
-      <span>Premium Demo</span>
     </a>
   </div>
 </section>
-
-<section class="is-hero-bar">
-  <div class="flex flex-col md:flex-row items-center justify-between space-y-6 md:space-y-0">
-    <h1 class="title">
-      Profile
-    </h1>
-    <button class="button light">Button</button>
+ <section>
+  <div class="container col-6">
+  <table class="table table-striped">
+  <thead>
+    <tr>
+      <th scope="col">ID</th>
+      <th scope="col">Name</th>     
+      <th scope="col">Phone</th>
+      <th scope="col">Email</th>
+      <th scope="col">Message</th>
+      <th scope="col">Action</th>
+    </tr>
+  </thead>
+  <tbody>
+   @foreach($data as $d)
+    <tr>
+      <th scope="row">{{$d -> id}}</th>
+      <td>{{$d -> name}}</td>
+      <td>{{$d->phone}}</td>
+      <td>{{$d-> email}}</td>
+      <td>{{$d-> message}}</td>
+      <td><button href class="button red">Delete</button></td>
+    </tr>
+    @endforeach
+  </tbody>
+</table>
   </div>
-</section>
-
-  <section class="section main-section">
-    <div class="grid grid-cols-1 gap-6 lg:grid-cols-2 mb-6">
-      <div class="card">
-        <header class="card-header">
-          <p class="card-header-title">
-            <span class="icon"><i class="mdi mdi-account-circle"></i></span>
-            Edit Profile
-          </p>
-        </header>
-        <div class="card-content">
-          <form>
-            <div class="field">
-              <label class="label">Avatar</label>
-              <div class="field-body">
-                <div class="field file">
-                  <label class="upload control">
-                    <a class="button blue">
-                      Upload
-                    </a>
-                    <input type="file">
-                  </label>
-                </div>
-              </div>
-            </div>
-            <hr>
-            <div class="field">
-              <label class="label">Name</label>
-              <div class="field-body">
-                <div class="field">
-                  <div class="control">
-                    <input type="text" autocomplete="on" name="name" value="John Doe" class="input" required>
-                  </div>
-                  <p class="help">Required. Your name</p>
-                </div>
-              </div>
-            </div>
-            <div class="field">
-              <label class="label">E-mail</label>
-              <div class="field-body">
-                <div class="field">
-                  <div class="control">
-                    <input type="email" autocomplete="on" name="email" value="user@example.com" class="input" required>
-                  </div>
-                  <p class="help">Required. Your e-mail</p>
-                </div>
-              </div>
-            </div>
-            <hr>
-            <div class="field">
-              <div class="control">
-                <button type="submit" class="button green">
-                  Submit
-                </button>
-              </div>
-            </div>
-          </form>
-        </div>
-      </div>
-      <div class="card">
-        <header class="card-header">
-          <p class="card-header-title">
-            <span class="icon"><i class="mdi mdi-account"></i></span>
-            Profile
-          </p>
-        </header>
-        <div class="card-content">
-          <div class="image w-48 h-48 mx-auto">
-            <img src="https://avatars.dicebear.com/v2/initials/john-doe.svg" alt="John Doe" class="rounded-full">
-          </div>
-          <hr>
-          <div class="field">
-            <label class="label">Name</label>
-            <div class="control">
-              <input type="text" readonly value="John Doe" class="input is-static">
-            </div>
-          </div>
-          <hr>
-          <div class="field">
-            <label class="label">E-mail</label>
-            <div class="control">
-              <input type="text" readonly value="user@example.com" class="input is-static">
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="card">
-      <header class="card-header">
-        <p class="card-header-title">
-          <span class="icon"><i class="mdi mdi-lock"></i></span>
-          Change Password
-        </p>
-      </header>
-      <div class="card-content">
-        <form>
-          <div class="field">
-            <label class="label">Current password</label>
-            <div class="control">
-              <input type="password" name="password_current" autocomplete="current-password" class="input" required>
-            </div>
-            <p class="help">Required. Your current password</p>
-          </div>
-          <hr>
-          <div class="field">
-            <label class="label">New password</label>
-            <div class="control">
-              <input type="password" autocomplete="new-password" name="password" class="input" required>
-            </div>
-            <p class="help">Required. New password</p>
-          </div>
-          <div class="field">
-            <label class="label">Confirm password</label>
-            <div class="control">
-              <input type="password" autocomplete="new-password" name="password_confirmation" class="input" required>
-            </div>
-            <p class="help">Required. New password one more time</p>
-          </div>
-          <hr>
-          <div class="field">
-            <div class="control">
-              <button type="submit" class="button green">
-                Submit
-              </button>
-            </div>
-          </div>
-        </form>
-      </div>
-    </div>
-  </section>
-
+ </section>
 <footer class="footer">
   <div class="flex flex-col md:flex-row items-center justify-between space-y-3 md:space-y-0">
     <div class="flex items-center justify-start space-x-3">

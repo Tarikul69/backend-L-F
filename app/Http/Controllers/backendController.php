@@ -16,14 +16,20 @@ class backendController extends Controller
     //dashboard
     public function services()
     {
-        $data['ab'] = DB::table('services')->get();
-        return view('backend.services')->with('data');
+        $data = DB::table('services')->get();
+        return view('backend.services', compact('data'));
+    }
+
+    public function deleteservice($id)
+    {
+        
     }
 
     //profile
     public function profile()
     {
-        return view('backend.profile');
+        $data = DB::table('contact')->get();
+        return view('backend.profile', compact('data'));
     }
     
     //Table
@@ -34,7 +40,8 @@ class backendController extends Controller
     //Forms 
     public function forms()
     {
-        return view('backend.forms');
+        $data = DB::table('support')->get();
+        return view('backend.forms', compact('data'));
     }
 
     //Login

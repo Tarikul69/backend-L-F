@@ -1,6 +1,3 @@
-
-
-
 <!DOCTYPE html>
 <html lang="en" class="">
 <head>
@@ -81,13 +78,13 @@
       <li class="--set-active-forms-html">
         <a href="forms">
           <span class="icon"><i class="mdi mdi-square-edit-outline"></i></span>
-          <span class="menu-item-label">Forms</span>
+          <span class="menu-item-label">Support</span>
         </a>
       </li>
       <li class="active">
         <a href="profile">
           <span class="icon"><i class="mdi mdi-account-circle"></i></span>
-          <span class="menu-item-label">Profile</span>
+          <span class="menu-item-label">Contact</span>
         </a>
       </li>
       <li>
@@ -104,7 +101,6 @@
     <h1 class="title">
       Service
     </h1>
-    
   </div>
 </section>
   <section class="section main-section">
@@ -154,7 +150,30 @@
     </div>
      
   </section>
-
+  <section>
+  <div class="container col-6">
+  <table class="table table-striped">
+  <thead>
+    <tr>
+      <th scope="col">ID</th>
+      <th scope="col">Title</th>     
+      <th scope="col">Details</th>
+      <th scope="col">Action</th>
+    </tr>
+  </thead>
+  <tbody>
+   @foreach($data as $d)
+    <tr>
+      <th scope="row">{{$d -> id}}</th>
+      <td>{{$d -> name}}</td>
+      <td>{{$d -> details}}</td>
+      <td><button href class="button red">Delete</button></td>
+    </tr>
+    @endforeach
+  </tbody>
+</table>
+  </div>
+ </section>
 <footer class="footer">
   <div class="flex flex-col md:flex-row items-center justify-between space-y-3 md:space-y-0">
     <div class="flex items-center justify-start space-x-3">

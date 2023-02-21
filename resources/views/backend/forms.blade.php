@@ -82,13 +82,13 @@
       <li class="active">
         <a href="forms">
           <span class="icon"><i class="mdi mdi-square-edit-outline"></i></span>
-          <span class="menu-item-label">Forms</span>
+          <span class="menu-item-label">Support</span>
         </a>
       </li>
       <li class="--set-active-profile-html">
         <a href="profile">
           <span class="icon"><i class="mdi mdi-account-circle"></i></span>
-          <span class="menu-item-label">Profile</span>
+          <span class="menu-item-label">Contact</span>
         </a>
       </li>
       <li>
@@ -106,116 +106,42 @@
   <div class="flex flex-col md:flex-row items-center justify-between space-y-6 md:space-y-0">
     <ul>
       <li>Admin</li>
-      <li>Forms</li>
+      <li>Support</li>
     </ul>
     <a href="https://justboil.me/" onclick="alert('Coming soon'); return false" target="_blank" class="button blue">
       <span class="icon"><i class="mdi mdi-credit-card-outline"></i></span>
-      <span>Premium Demo</span>
+       
     </a>
   </div>
 </section>
-
-<section class="is-hero-bar">
-  <div class="flex flex-col md:flex-row items-center justify-between space-y-6 md:space-y-0">
-    <h1 class="title">
-      Forms
-    </h1>
-    <button class="button light">Button</button>
+<section>
+  <div class="container col-6">
+  <table class="table table-striped">
+  <thead>
+    <tr>
+      <th scope="col">ID</th>
+      <th scope="col">Name</th>     
+      <th scope="col">Phone</th>
+      <th scope="col">Email</th>
+      <th scope="col">Message</th>
+      <th scope="col">Action</th>
+    </tr>
+  </thead>
+  <tbody>
+   @foreach($data as $d)
+    <tr>
+      <th scope="row">{{$d -> id}}</th>
+      <td>{{$d -> name}}</td>
+      <td>{{$d->phone}}</td>
+      <td>{{$d-> email}}</td>
+      <td>{{$d-> message}}</td>
+      <td><button href class="button red">Delete</button></td>
+    </tr>
+    @endforeach
+  </tbody>
+</table>
   </div>
-</section>
-
-  <section class="section main-section">
-    <div class="card mb-6">
-      <header class="card-header">
-        <p class="card-header-title">
-          <span class="icon"><i class="mdi mdi-ballot"></i></span>
-          Forms
-        </p>
-      </header>
-      <div class="card-content">
-        <form method="get">
-          <div class="field">
-            <label class="label">From</label>
-            <div class="field-body">
-              <div class="field">
-                <div class="control icons-left">
-                  <input class="input" type="text" placeholder="Name">
-                  <span class="icon left"><i class="mdi mdi-account"></i></span>
-                </div>
-              </div>
-              <div class="field">
-                <div class="control icons-left icons-right">
-                  <input class="input" type="email" placeholder="Email" value="alex@smith.com">
-                  <span class="icon left"><i class="mdi mdi-mail"></i></span>
-                  <span class="icon right"><i class="mdi mdi-check"></i></span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="field">
-            <div class="field-body">
-              <div class="field">
-                <div class="field addons">
-                  <div class="control">
-                    <input class="input" value="+44" size="3" readonly>
-                  </div>
-                  <div class="control expanded">
-                    <input class="input" type="tel" placeholder="Your phone number">
-                  </div>
-                </div>
-                <p class="help">Do not enter the first zero</p>
-              </div>
-            </div>
-          </div>
-          <div class="field">
-            <label class="label">Department</label>
-            <div class="control">
-              <div class="select">
-                <select>
-                  <option>Business development</option>
-                  <option>Marketing</option>
-                  <option>Sales</option>
-                </select>
-              </div>
-            </div>
-          </div>
-          <hr>
-          <div class="field">
-            <label class="label">Subject</label>
-
-            <div class="control">
-              <input class="input" type="text" placeholder="e.g. Partnership opportunity">
-            </div>
-            <p class="help">
-              This field is required
-            </p>
-          </div>
-
-          <div class="field">
-            <label class="label">Question</label>
-            <div class="control">
-              <textarea class="textarea" placeholder="Explain how we can help you"></textarea>
-            </div>
-          </div>
-          <hr>
-
-          <div class="field grouped">
-            <div class="control">
-              <button type="submit" class="button green">
-                Submit
-              </button>
-            </div>
-            <div class="control">
-              <button type="reset" class="button red">
-                Reset
-              </button>
-            </div>
-          </div>
-        </form>
-      </div>
-    </div>
-  </section>
-
+ </section>
 
 <footer class="footer">
   <div class="flex flex-col md:flex-row items-center justify-between space-y-3 md:space-y-0">
