@@ -74,7 +74,7 @@
         </a>
       </li>
       <li class="--set-active-forms-html">
-        <a href="services">
+        <a href="services1">
           <span class="icon"><i class="mdi mdi-square-edit-outline"></i></span>
           <span class="menu-item-label">Services</span>
         </a>
@@ -135,7 +135,7 @@
       <td>{{$d->phone}}</td>
       <td>{{$d-> email}}</td>
       <td>{{$d-> message}}</td>
-      <td><button href class="button red">Delete</button></td>
+      <td><a href="{{url('deletesupport/'.$d->id)}}" class="button red">Delete</a></td>
     </tr>
     @endforeach
   </tbody>

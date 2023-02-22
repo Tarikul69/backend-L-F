@@ -45,6 +45,9 @@ Route::get('login', [backendController::class, 'login']);
 
 //CRUD
 Route::post('contact1', [backendLogicController::class, 'contact']);
+Route::get('deletecontact/{id}', [backendController::class, 'deletecontact']);
 Route::post('support1', [backendLogicController::class, 'support1']);
+Route::get('deletesupport/{id}', [backendController::class, 'deletesupport']);
 Route::post('service1', [backendLogicController::class, 'service1']);
+Route::get('deleteservice/{id}', [backendController::class, 'deleteservice']);
 Route::post('login1', [backendLogicController::class, 'login1']);

@@ -20,16 +20,37 @@ class backendController extends Controller
         return view('backend.services', compact('data'));
     }
 
-    public function deleteservice($id)
+    public function deleteservice(Request $req, $id)
     {
-        
+        DB::table('services')->where('id', '=', $id)->delete();
+
+        if($req)
+        {
+            return back()->with('message', 'Deleted Successfuly');
+        }
+        else{
+            return back()->with('Fail', 'Failed to delete data');
+        }
     }
 
-    //profile
+    //profile /contact
     public function profile()
     {
         $data = DB::table('contact')->get();
         return view('backend.profile', compact('data'));
+    }
+
+    public function deletecontact(Request $req, $id)
+    {
+        DB::table('contact')->where('id', '=', $id)->delete();
+
+        if($req)
+        {
+            return back()->with('message', 'Deleted Successfuly');
+        }
+        else{
+            return back()->with('Fail', 'Failed to delete data');
+        }
     }
     
     //Table
@@ -37,11 +58,24 @@ class backendController extends Controller
     {
         return view('backend.tables');
     }
-    //Forms 
+    //Forms /Support
     public function forms()
     {
         $data = DB::table('support')->get();
         return view('backend.forms', compact('data'));
+    }
+
+    public function deletesupport(Request $req, $id)
+    {
+        DB::table('support')->where('id', '=', $id)->delete();
+
+        if($req)
+        {
+            return back()->with('message', 'Deleted Successfuly');
+        }
+        else{
+            return back()->with('Fail', 'Failed to delete data');
+        }
     }
 
     //Login
