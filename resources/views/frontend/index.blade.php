@@ -25,7 +25,7 @@
                     <h6>Estd 1905</h6>
                 </div> -->
                 <div class="col-sm-4 col-12 align-self-center box-1 text-center">
-                    <a class="navbar-brand" href="index"><img src="assets/images/header-logo.png" alt="logo"></a>
+                    <a class="navbar-brand" href="index"><h2>Meditech</h2></a>
                 </div>
                 <div class="col-sm-4 align-self-center text-right">
                     <!-- <div class="social-icons">
