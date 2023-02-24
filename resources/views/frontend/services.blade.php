@@ -24,12 +24,12 @@
     <header class="header bg">
         <div class="container text-white">
             <div class="row">
-                <!-- <div class="col-sm-4 align-self-center text-left">
-                    <h6>Estd 1905</h6>
-                </div> -->
-                <!-- <div class="col-sm-1 col-1 align-self-center box-1 text-center">
-                    <a class="navbar-brand" href="index"><h6>Lab</h6></a>
-                </div> -->
+                <div class="col-sm-4 align-self-center text-left">
+                <a class="navbar-brand" href="index"><img style="height: 90px; width: 100%;" src="assets/images/logo.jpg" alt=""></a>
+                </div>
+               <!--  <div class="col-sm-1 col-1 align-self-center box-1 text-center">
+                    <a class="navbar-brand" href="index"><img style="height: 90px; width: 100%;" src="assets/images/logo.jpg" alt=""></a>
+                </div>  -->
                 <!-- <div class="col-sm-4 align-self-center text-right">
                     <div class="social-icons">
                         <a href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>

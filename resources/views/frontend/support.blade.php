@@ -24,20 +24,20 @@
     <header class="header bg">
         <div class="container text-white">
             <div class="row">
-                <div class="col-sm-4 align-self-center text-left">
+                <!-- <div class="col-sm-4 align-self-center text-left">
                     <h6>Estd 1905</h6>
-                </div>
+                </div> -->
                 <div class="col-sm-4 col-12 align-self-center box-1 text-center">
-                    <a class="navbar-brand" href="index.html"><img src="assets/images/header-logo.png" alt="logo"></a>
+                    <a class="navbar-brand" href="index.html"><img style="height: 90px; width: 100%;" src="assets/images/logo.jpg" alt=""></a>
                 </div>
-                <div class="col-sm-4 align-self-center text-right">
+                <!-- <div class="col-sm-4 align-self-center text-right">
                     <div class="social-icons">
                         <a href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
                         <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
                         <a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a>
                         <a href="#"><i class="fa fa-youtube" aria-hidden="true"></i></a>
                     </div>
-                </div>
+                </div> -->
             </div>
             <!--/row-->
         </div>
