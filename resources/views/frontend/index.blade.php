@@ -156,12 +156,12 @@
 
     <!--Section-5-->
      
-    <section class="section-6" data-aos="fade-up">
-        <div class="container">
+    <!-- <section class="section-6" data-aos="fade-up">
+        <div class="container"> -->
             <!-- Grid row-->
             <div class="row main" data-aos="fade-up" data-aos-delay="300">
                 <!-- Grid column -->
-                <div class="col-lg-6 col-sm-12 col1">
+                <!-- <div class="col-lg-6 col-sm-12 col1">
                     <div class="heading">
                         <h3>Subscribe to Newsletter</h3>
                     </div>
@@ -173,7 +173,7 @@
                             <button class="btn btn-info" type="submit">Subscribe</button>
                         </div>
                     </form>
-                </div>
+                </div> -->
             </div>
         </div>
     </section>
