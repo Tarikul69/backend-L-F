@@ -66,7 +66,7 @@
       <li class="--set-active-tables-html">
             <a href="tables">
             <span class="icon"><i class="mdi mdi-table"></i></span>
-            <span class="menu-item-label">Tables</span>
+            <span class="menu-item-label">About</span>
             </a>
       </li>
       <li class="--set-active-forms-html">
@@ -90,7 +90,7 @@
       <li>
         <a href="login">
           <span class="icon"><i class="mdi mdi-lock"></i></span>
-          <span class="menu-item-label">Login</span>
+          <span class="menu-item-label">LogOut</span>
         </a>
       </li>
        

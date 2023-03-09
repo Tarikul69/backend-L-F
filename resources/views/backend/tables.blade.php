@@ -81,7 +81,7 @@
       <li class="--set-active-forms-html">
         <a href="forms">
           <span class="icon"><i class="mdi mdi-square-edit-outline"></i></span>
-          <span class="menu-item-label">Forms</span>
+          <span class="menu-item-label">Support</span>
         </a>
       </li>
       <li class="--set-active-profile-html">
@@ -93,7 +93,7 @@
       <li>
         <a href="login">
           <span class="icon"><i class="mdi mdi-lock"></i></span>
-          <span class="menu-item-label">Login</span>
+          <span class="menu-item-label">LogOut</span>
         </a>
       </li>
     </ul>
