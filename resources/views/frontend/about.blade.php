@@ -97,17 +97,7 @@ to Bangladeshi pharmaceutical firms</h2>
             <div class="row" style="margin-right: 0; margin-left: 0;" data-aos="fade-up" data-aos-delay="300">
                 <div>
                  <img src="assets/images/about.jpg" alt="about-bg" class="thumbnail image">
-                  <p><b>LEADING PROVIDERS OF PHARMACEUTICAL TECHNOLOGY </b><br><br>
-                  Meditech Corporation is widely considered one of the leading providers of pharmaceutical technology and machinery in Bangladesh. <br><br>
-                  
-                  Meditech Corporation was founded by `Md. Mostafizur Rahman in 2009 dedicated to supplying API’s and intermediates in the local pharmaceutical industry. <br><br>
-                  
-                  We supply, install, commission, document, and validate types of machinery for Bangladeshi pharmaceutical companies and provide them with the finest level of technology from manufacturers worldwide, including countries such as India, China, Korea, and Germany. We are the local agent of Blue Star India. <br><br>
-                  
-                  Our products and services include New Plant Design and Engineering, Process Consulting, Clean Room and HVAC Systems, Cold Room Pharma Water Systems, Production and Process Equipment, Packaging Equipment, Laboratory Equipment, Testing, Commissioning, and Validation services. <br><br>
-                  
-                  We provide on-call servicing for the machines that we sell. The engineers travel around the world and receive specific training from the manufacturers of the machinery so that they are prepared to provide quality servicing to the machines in the local market. <br><br>
-                   </p>
+                  <p></p>
                 </div>
              </div>
         </div>

@@ -10,8 +10,9 @@ class frontendController extends Controller
 
     //about
     public function about()
-    {
-        return view('frontend.about');
+    {  
+        $data = DB::table('about')->get();
+        return view('frontend.about', compact('data'));
     }
 
     // home or index
